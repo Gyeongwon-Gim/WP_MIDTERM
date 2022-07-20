@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cute Aliens</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css " href="style.css">
+</head>
+
+<body>
+    <canvas id="gameCanvas" width="640" height="960"></canvas>
+    <div id ="start"> 
+            <ul>
+                <h1>Cute Aliens</h1>
+                <li>Welcome!!</li>
+                <li>Do you wanna play game? </li>
+                <li><input type="button" id="start_button" value="START" onclick="startGame();"/></li>
+            </ul>
+    </div>
+
+    <div id="score"></div>
+    <div id ="GameOver"> 
+        <ul>
+            <li>GameOver</li>
+            <li id="final_score"></li>
+            <li>Replay? <input id="replay"type= "image" src="src\imgs\replay.png" alt="replay" onClick="window.location.reload()" /></li>
+        </ul>
+    </div>
+    <div id="soundcontrol">
+        <input  id="soundButton_on" type="image" src="src\imgs\volume-off-solid.png" onclick="snd_on();" alt="음악켜기"/>
+        <input  id="soundButton_off" type="image" src="src\imgs\volume-high-solid.png" onclick="snd_off();" alt="음악끄기"/>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
+<!-- RIP My Dear Game... -->

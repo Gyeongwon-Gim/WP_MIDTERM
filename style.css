@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@keyframes movebackground {
+    0% {background-position: center 0;}
+    100% {background-position: center +960px;}
+    }     
+
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+hr {
+    display : none;
+    border: transparent;
+}
+
+h1 {
+    margin : 30px 0px;
+    color: greenyellow;
+    text-align: center;
+    text-shadow: 3px 3px brown;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 80%;
+    padding: 15px 0; 
+}
+
+body {
+    background-color: black;
+}
+
+canvas {
+    background: url("src/imgs/b1bdc1ae539dcbd1a7c33cef3e5f2d9a.gif");
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    /* border: 30px ridge #61ed4e; */
+    font-family: 'Press Start 2P', cursive;
+    animation : movebackground 3s linear infinite;
+    z-index: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#start, #GameOver {
+    color: white;
+    background-color: transparent;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#start{
+    width: 640px;
+    height: 960px;
+    z-index: 1;
+    
+}
+#start_button{
+    padding: 10px 30px;
+    margin: 10px 0;
+    color:black;
+    background-color: white;
+    border: white 3px solid;
+    border-radius: 5px;
+}
+#start_button:hover{
+    padding: 10px 30px;
+    margin: 10px 0;
+    color:white;
+    background-color: black;
+    border: white 3px solid;
+    border-radius: 5px;
+}
+
+#GameOver{
+    z-index: 2;
+    display: none;
+    text-align: center;
+    border: 5px white solid;
+    width : 400px;
+    height : auto;
+    top: 50%;
+    transform: translate(-50%, -180%);
+}
+
+#score{
+    color:white;
+    z-index: 2;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-200%);
+}
+#soundButton_on{
+    display:none;
+}
+#soundButton_on, #soundButton_off, #replay{
+    padding: 6px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    /* filter: invert(100%); */
+    border: 1px solid white;
+    border-radius: 5px;
+}
+ul {
+    list-style-type : none;
+}
+ul li { 
+    margin: 35px 0px;
+    font-size: 30px;
+}
+p{
+    font-size:20px;
+}
